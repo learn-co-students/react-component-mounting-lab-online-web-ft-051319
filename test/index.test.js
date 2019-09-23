@@ -25,7 +25,7 @@ describe('<App />', () => {
     expect(appWrapper.children('.TimerGrid').length).to.equal(1)
 
     //expect this.state.timers to be an array equal to 1
-    expect(appWrapper.state().timerIDs.length).to.equal(1)
+    expect(appWrapper.state.timerIDs.length).to.equal(1)
 
     appWrapper.unmount()
   });
